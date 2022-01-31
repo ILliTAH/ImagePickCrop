@@ -42,7 +42,7 @@ Gradle dependency:
 ```
 
 ```groovy
-   implementation 'com.github.Drjacky:ImagePicker:$libVersion'
+   implementation 'com.github.ILliTAH:ImagePickCrop:$libVersion'
 ```
 
 Where `$libVersion` = [![libVersion](https://img.shields.io/github/release/drjacky/imagePicker/all.svg?style=flat-square)](https://github.com/ILliTAH/ImagePickCrop/releases)
