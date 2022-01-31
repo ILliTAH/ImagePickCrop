@@ -1,0 +1,42 @@
+
+buildscript {
+    ext {
+        kotlin_version = '1.5.31'
+        versionCode = 35
+        versionName = '2.1.15'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        //jcenter plugins
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+        maven { url "https://jitpack.io" }
+    }
+
+    // Avoid Kotlin docs error
+    tasks.withType(Javadoc) {
+        enabled = false
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
