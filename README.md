@@ -45,7 +45,7 @@ Gradle dependency:
    implementation 'com.github.Drjacky:ImagePicker:$libVersion'
 ```
 
-Where `$libVersion` = [![libVersion](https://img.shields.io/github/release/drjacky/imagePicker/all.svg?style=flat-square)](https://github.com/drjacky/ImagePicker/releases)
+Where `$libVersion` = [![libVersion](https://img.shields.io/github/release/drjacky/imagePicker/all.svg?style=flat-square)](https://github.com/ILliTAH/ImagePickCrop/releases)
 
 **If you want to get the activity result:**
 
